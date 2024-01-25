@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="To Do.css">
+    <title>Todo App</title>
+</head> 
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Todo App</h1>
+            <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </header>
+
+        <div class="input-container">
+            <input type="text" id="todoInput" placeholder="Add a new task...">
+            <select id="prioritySelect">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <input type="date" id="dueDateInput">
+            <input type="text" id="categoryInput" placeholder="Category">
+            <textarea id="descriptionInput" placeholder="Description"></textarea>
+            <button onclick="addTodo()">Add Task</button>
+        </div>
+
+        <ul id="todoList"></ul>
+
+        <footer>
+            <p>&copy; 2024 Your Todo App</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </footer>
+    </div>
+
+    <script src="To Do.js"></script>
+</body>
+</html>
